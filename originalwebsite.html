@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUSE OF FLAVOURS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        header {
+            background: #28a745;
+            color: white;
+            padding: 1px;
+            text-align: center;
+            background-image: url(assets/images/back2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 98vh;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+       .heading h1 {
+        margin-top: 110px;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 60px;
+        
+       }
+
+
+        .container img {
+            position: relative;
+            top: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #eeeeee;
+        }
+
+        .menu-item {
+            margin: 10px 0;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 10px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+         header button {
+            background-color: rgb(148, 126, 0);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #089527;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: g;
+
+
+
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 70px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            
+        }
+
+
+        .menu-link{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #f8f8f8;
+            text-align: center;
+            background-image: url(assets/images/pic2.jpg  );
+            margin: 50px;
+            border: 1px solid rgb(0, 0, 0);
+            height: 550px;
+            width: 700px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            gap: 10px;
+            background-position: center center;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .menu-link button{
+            width: 100px;
+            margin: auto;
+            background-color: rgb(148, 126, 0);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-link p{
+            margin: 0 240px;
+            font-size: 40px;
+        }
+        .menu-link1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #f8f8f8;
+            text-align: center;
+            background-image: url(assets/images/indmenu2.jpg);
+            margin: 0;
+            border: 1px solid rgb(0, 0, 0);
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            gap: 20px;
+            background-position: center center;
+            font-family: 'Times New Roman', Times, serif;
+            transition: transform 0.2s ease-in-out;
+
+
+        }
+        .menu-link1:hover{
+            transform: scale(1.06);
+        }
+
+        .menu-link1 button{
+            width: 150px;
+            margin: auto;
+            background-color: rgb(148, 126, 0);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+
+        .menu-link1 p{
+            margin: 0 240px;
+            font-size: 18px;
+        }
+
+
+        .menu-link2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #f8f8f8;
+            text-align: center;
+            background-image: url(assets/images/m2.png );
+            margin: 0;
+            border: 1px solid rgb(0, 0, 0);
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            gap: 20px;
+            background-position: center center;
+            font-family: 'Times New Roman', Times, serif;
+            transition: transform 0.2s ease-in-out;
+
+        }
+
+        .menu-link2:hover{
+            transform: scale(1.06);
+        }
+
+
+        .menu-link2 button{
+            width: 150px;
+            margin: auto;
+            background-color: rgb(148, 126, 0);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-link2 p{
+            margin: 0 240px;
+            font-size: 18px;
+        }
+
+
+
+
+        .menu-link3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #f8f8f8;
+            text-align: center;
+            background-image: url(assets/images/i5.jpg );
+            margin: 0;
+            border: 1px solid rgb(0, 0, 0);
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            gap: 20px;
+            background-position: center center;
+            font-family: 'Times New Roman', Times, serif;
+            transition: transform 0.2s ease-in-out;
+
+        }
+
+        .menu-link3:hover{
+            transform: scale(1.06);
+        }
+
+        .menu-link3 button{
+            width: 150px;
+            margin: auto;
+            background-color: rgb(148, 126, 0);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            
+
+        }
+
+        .menu-link3 p{
+            margin: 0 240px;
+            font-size: 18px;
+        }
+
+
+
+        .menu-link4{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #f8f8f8;
+            text-align: center;
+            background-image: url(assets/images/j3.jpg );
+            margin: 0;
+            border: 1px solid rgb(0, 0, 0);
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            gap: 20px;
+            background-position: center center;
+            font-family: 'Times New Roman', Times, serif;
+            transition: transform 0.2s ease-in-out;
+
+
+        }
+
+        .menu-link4:hover{
+            transform: scale(1.06);
+        }
+
+        .menu-link4 button{
+            width: 150px;
+            margin: auto;
+            background-color: rgb(148, 126, 0);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            
+
+        }
+
+        .menu-link4 p{
+            margin: 0 240px;
+            font-size: 18px;
+        }
+
+
+        .menu-link5{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #f8f8f8;
+            text-align: center;
+            background-image: url(assets/images/f.jpg );
+            margin: 0;
+            border: 1px solid rgb(0, 0, 0);
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            gap: 20px;
+            background-position: center center;
+            font-family: 'Times New Roman', Times, serif;
+            transition: transform 0.2s ease-in-out;
+
+
+        }
+
+        .menu-link5:hover{
+            transform: scale(1.06);
+        }
+
+        .menu-link5 button{
+            width: 150px;
+            margin: auto;
+            background-color: rgb(148, 126, 0);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            
+
+        }
+
+        .menu-link5 p{
+            margin: 0 240px;
+            font-size: 18px;
+        }
+
+        .down{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            color: #ffffff;
+            text-align: left;
+            background-image: url(assets/images/t1.jpg  );
+            margin: 0;
+            border: 0px solid rgb(0, 0, 0);
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            gap: 8px;
+            background-position: center center;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .footer{
+            color: #eeeeee;
+            margin-left: 10px;
+            background-image:url(assets/images/t1.jpg);
+            margin-top: 0;
+        }
+        .text{
+            color: white;
+            font-size: 3rem;
+            font-family: 'Times New Roman', Times, serif   ;
+        }
+        .text2{
+            color: white;
+            font-size: 2rem;
+            font-family:'Times New Roman', Times, serif ;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-image:url(assets/images/b.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+
+        body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .footer-section {
+      flex: 1 1 250px;
+      min-width: 250px;
+      color: #ddd;
+    }
+
+    .footer-section h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .footer-section p {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ff6347; 
+    }
+
+
+    .quick-links a {
+      color: #ddd;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .quick-links a:hover {
+      color: #ff6347; 
+    }
+
+    .cta-button {
+      background-color: #ff6347;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #d94f3b; 
+    }
+
+    .footer-bottom {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-section {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav class="nav">
+            <a><img src="assets/images/output-onlinepngtools (1).png" width="200" height="100"></a>
+            <a href="#footer-container">About</a>
+            <a href="/fee project/menu2.html">Menu</a>
+            <a href="index4.html">Reservation</a>
+            <a href="/fee project/project/gallery.html">Gallery</a>
+
+        </nav>
+
+    <div class="heading">
+        <h1>DELICIOUS FOOD <br>AND BEST SERVICE</h1>
+            <p><h2>Restaurants are not just places to eat, they are also places to socialize, celebrate, and <br> create memories. From fine dining establishments to hole-in-the-wall eateries, <br>restaurants have captured the hearts and minds of people for generations.</h2></p>
+        
+
+            <a href="/fee project/index4.html"><button class="button button1">Table Reservation</button></a>
+
+        
+     </div>
+
+</header>
+
+
+<div class="menu-link1">
+    <h1>INDIAN FOOD</h1>
+    <p>Indian cuisine consists of a variety of regional and traditional cuisines native to the Indian subcontinent. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits.
+
+    </p>
+
+    <a href="/fee project/menu2.html"><button class="button button1">Indian menu</button></a>
+
+
+</div>
+
+<div class="menu-link2">
+    <h1>MEXICAN FOOD</h1>
+    <p>Mexican food has a reputation for being very spicy, but it has a wide range of flavors and while many spices are used for cooking, not all are spicy. Many dishes also have subtle flavors. Chiles are indigenous to Mexico and their use dates back thousands of years.
+
+    </p>
+
+    <a href="/fee project/menu2.html"><button class="button button1">Mexican menu</button></a>
+
+</div>
+
+
+
+<div class="menu-link3">
+    <h1>ITALIAN FOOD</h1>
+    <p>One of the main characteristics of Italian cuisine is its simplicity, with many dishes made up of few ingredients, and therefore Italian cooks often rely on the quality of the ingredients, rather than the complexity of preparation.
+
+    </p>
+
+    <a href="/fee project/menu2.html"><button class="button button1">Italian menu</button></a>
+
+</div>
+
+<div class="menu-link4">
+    <h1>JAPANESE FOOD</h1>
+    <p>Traditional Japanese cuisine uses locally sourced fresh ingredients and utilizes special cooking techniques and utensils to bring out the natural flavors. Presentation is also key. Different dishes are served on or in complimentary types of tableware, varying in shape, size, color and pattern.
+
+    </p>
+
+    <a href="/fee project/menu2.html"><button class="button button1">Japanese menu
+    </button></a>
+
+</div>
+
+
+<div class="menu-link5">
+    <h1>FRENCH FOOD</h1>
+    <p>French cuisine is characterized by its use of a wide range of ingredients, including meats, seafood, vegetables, and fruits. It's also known for its use of sauces, which are often made with butter, cream, and wine. Some of the most popular sauces in French cuisine include béarnaise, hollandaise, and béchamel.
+
+    </p>
+
+    <a href="/fee project/menu2.html"><button class="button button1">French menu</button></a>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<footer>
+    <div class="footer-container" section id="footer-container">
+      <div class="footer-section contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@houseofflavours.com">info@houseofflavours.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Open Hours: 10:00 AM - 10:00 PM</p>
+      </div>
+
+      <div class="footer-section quick-links">
+        <h3>Quick Links</h3>
+        <a href="/fee project/menu2.html">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="index4.html">Reservations</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-section location-info">
+        <h3>Location</h3>
+        <p>123 Delicious St., Food City, FC 12345</p>
+      </div>
+
+      <div class="footer-section social-icons">
+        <h3>Follow Us</h3>
+        <a href="#" target="_blank" title="Facebook">📘</a>
+        <a href="#" target="_blank" title="Instagram">📷</a>
+        <a href="#" target="_blank" title="Twitter">🐦</a>
+        <a href="#" target="_blank" title="YouTube">🎥</a>
+      </div>
+    </div>
+
+    <div class="cta-container">
+      <a href="index4.html" class="cta-button">Make a Reservation</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 House Of Flavours. All Rights Reserved. | Designed by House Of Flavours</p>
+    </div>
+  </footer>
+</body>
+
+</html>
